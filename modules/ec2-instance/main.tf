@@ -56,11 +56,11 @@ locals {
   default_web_server_user_data = <<-EOF
     #!/bin/bash
     # Update system
-    yum update -y
-    
+    dnf update -y
+
     # Install NGINX
-    amazon-linux-extras install nginx1 -y
-    
+    dnf install nginx -y
+  
     # Start and enable NGINX
     systemctl start nginx
     systemctl enable nginx
