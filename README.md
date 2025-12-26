@@ -6,7 +6,7 @@ This project uses **Terraform** to provision a functional **EC2 web server** tha
 ```
 .github/                           # GitHub metadata
 │   └── workflows/
-        └── terraform.yaml         # GitOps pipeline
+        └── gitops.yaml            # GitOps pipeline
     
 main/                              # Main configuration
     
@@ -47,7 +47,7 @@ Make sure you have the following installed:
 
 ```bash
 cd main      
-terraform init -upgrade -backend-config="/../state.config" 
+terraform init -upgrade -backend-config="../state.config" 
 ```
 
 ### Format, Validate & Scan
