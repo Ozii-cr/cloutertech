@@ -1,0 +1,4 @@
+exclude:
+  - aws-ec2-require-vpc-flow-logs-for-all-vpcs #disable vpc flow logs to save cost 
+  - aws-ec2-no-public-egress-sgr #allow outbound traffic to all ips
+  - aws-ec2-no-public-ip-subnet #allow auto ipv4 public ip in public subnets
