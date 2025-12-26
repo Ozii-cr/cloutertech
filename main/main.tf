@@ -71,7 +71,7 @@ resource "aws_security_group" "ct_server_sg" {
 # EC2
 ################################################################################
 module "ct_server" {
-  source            = "../../modules/ec2-instance"
+  source            = "../modules/ec2-instance"
   key_name          = "CtServerKey"
   ssh_public_key    = var.ssh_public_key_ct_server
   ami               = "ami-00ca570c1b6d79f36" #amazonlinux 23
